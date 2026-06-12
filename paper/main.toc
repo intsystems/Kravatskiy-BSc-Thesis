@@ -1,0 +1,153 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1.}Introduction}{5}{section.1}%
+\contentsline {paragraph}{Approbation of the results.}{6}{section.1}%
+\contentsline {paragraph}{Acknowledgements.}{6}{section.1}%
+\contentsline {section}{\numberline {2.}Preliminaries: Linear Minimization Oracle Framework}{7}{section.2}%
+\contentsline {paragraph}{Frobenius norm and Normalized SGD}{8}{equation.5}%
+\contentsline {paragraph}{Spectral norm and Muon}{8}{equation.6}%
+\contentsline {paragraph}{Chebyshev norm and SignSGD}{9}{equation.7}%
+\contentsline {section}{\numberline {3.}Beyond the Spectral Norm: Fanions}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1.}The Rank Gap Problem}{9}{subsection.3.1}%
+\contentsline {paragraph}{Schatten norms}{9}{equation.9}%
+\contentsline {paragraph}{Ky Fan norms}{10}{equation.9}%
+\contentsline {subsection}{\numberline {3.2.}Solution: Duals to Ky Fan Norms}{11}{subsection.3.2}%
+\contentsline {paragraph}{Connection to existing algorithms}{11}{equation.10}%
+\contentsline {section}{\numberline {4.}Conic Combination of LMO-algorithms is an LMO-algorithm}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1.}General Case}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2.}Frobeniusize Them: F-Muon and F-Neon}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3.}Add SignSGD: S-Muon and S-Neon}{14}{subsection.4.3}%
+\contentsline {section}{\numberline {5.}Computing the Updates}{14}{section.5}%
+\contentsline {section}{\numberline {6.}Experiments}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1.}A smooth convex problem}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2.}CIFAR-10 airbench}{19}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3.}NanoGPT Speedrun}{20}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4.}GPT-2 Medium Speedrun}{21}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5.}NanoGPT Fine-Tuning}{22}{subsection.6.5}%
+\contentsline {section}{\numberline {7.}Related Work and Discussion}{24}{section.7}%
+\contentsline {subsection}{\numberline {7.1.}Algorithms for Vectors $\rightarrow $ Algorithms for Matrices}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2.}Theory behind Muon}{24}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3.}Improvements of Muon $\rightarrow $ of Fanions, F-Fanions, and S-Fanions as well}{25}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4.}The Nuclear Norm in the LMO}{26}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5.}The LMO and Error Feedback}{26}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6.}Advances of 2026}{27}{subsection.7.6}%
+\contentsline {paragraph}{Convergence for Fanions.}{27}{subsection.7.6}%
+\contentsline {paragraph}{LMO is only an instrument.}{27}{subsection.7.6}%
+\contentsline {section}{\numberline {8.}Conclusion}{27}{section.8}%
+\contentsline {section}{Список литературы}{29}{section*.12}%
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Приложение}{34}{section*.13}%
+\contentsline {section}{\numberline {9.}LMO for Neural Networks}{34}{section.9}%
+\contentsline {section}{\numberline {10.}Proof of Lemma on the Dual to Convex Combinations}{34}{section.10}%
+\contentsline {section}{\numberline {11.}Norms for F-Muon and F-Neon}{35}{section.11}%
+\contentsline {section}{\numberline {12.}Visualization of Different Matrix Norms}{36}{section.12}%
+\contentsline {subsection}{\numberline {12.1.}Duals to F* and F2 Norms}{36}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2.}A Ky Fan Norm and Its Dual}{36}{subsection.12.2}%
+\contentsline {section}{\numberline {13.}More Details for the Smooth Convex Problem}{37}{section.13}%
+\contentsline {section}{\numberline {14.}Gradient Norm Analysis for CIFAR-10 Experiments}{37}{section.14}%
+\contentsline {section}{\numberline {15.}Technical Details of the Experiments}{39}{section.15}%
+\contentsline {paragraph}{The smooth convex problem and CIFAR-10 airbench}{39}{section.15}%
+\contentsline {paragraph}{NanoGPT and GPT-2 Medium Pretrain}{39}{section.15}%
+\contentsline {paragraph}{NanoGPT Fine-tuning.}{39}{section.15}%

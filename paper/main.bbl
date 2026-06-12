@@ -1,0 +1,431 @@
+\begin{thebibliography}{}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\iflanguage{russian}{\hbox
+  to.8em{--\hss--}}{\textemdash}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus
+  0.1em\fi
+\cyrdash\hskip.2em plus 0.1em\ignorespaces}
+\renewcommand{\newblock}{\ignorespaces}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[Bernstein(2025)Bernstein]{bernstein2025deriving}
+\selectlanguageifdefined{english}
+Bernstein~Jeremy. Deriving {Muon}. \BibDash
+\newblock 2025. \BibDash
+\newblock Access mode: \BibUrl{https://jeremybernste.in/writing/deriving-muon}.
+
+\bibitem[Bernstein and Newhouse(2024)Bernstein and
+  Newhouse]{bernstein2024oldoptimizernewnorm}
+\selectlanguageifdefined{english}
+Bernstein~Jeremy, Newhouse~Laker. Old optimizer, new norm: An anthology~//
+  \BibEmph{arXiv preprint arXiv:2409.20325}. \BibDash
+\newblock 2024.
+
+\bibitem[Shulgin et~al.(2025)Shulgin, AlRashed, Orabona, and
+  Richtárik]{shulgin2025inexactmuon}
+\selectlanguageifdefined{english}
+Beyond the Ideal: Analyzing the Inexact {Muon} Update~/ Shulgin~Egor,
+  AlRashed~Sultan, Orabona~Francesco, and Richtárik~Peter~// \BibEmph{arXiv
+  preprint arXiv:2510.19933}. \BibDash
+\newblock 2025.
+
+\bibitem[Bhatia(2013)Bhatia]{bhatia2013matrix}
+\selectlanguageifdefined{english}
+Bhatia~Rajendra. Matrix analysis. \BibDash
+\newblock Springer Science \& Business Media, 2013. \BibDash
+\newblock Vol.~169.
+
+\bibitem[Chen et~al.(2025)Chen, Liang, Zhao, Zhang, Kang, Liu, Li, and
+  Xu]{chen2025cosmoshybridadaptive}
+\selectlanguageifdefined{english}
+{COSMOS}: A Hybrid Adaptive Optimizer for Memory-Efficient Training of {LLMs}~/
+  Chen~Weizhu, Liang~Chen, Zhao~Tuo, Zhang~Zixuan, Kang~Hao, Liu~Liming,
+  Li~Zichong, and Xu~Zhenghao~// \BibEmph{arXiv preprint arXiv:2502.17410}.
+  \BibDash
+\newblock 2025.
+
+\bibitem[Cesista(2025)Cesista]{cesista2025schattenp}
+\selectlanguageifdefined{english}
+Cesista~Franz~Louis. Steepest Descent Under {S}chatten-$p$ Norms. \BibDash
+\newblock 2025. \BibDash February. \BibDash
+\newblock Access mode:
+  \BibUrl{https://leloykun.github.io/ponder/steepest-descent-schatten-p/}.
+
+\bibitem[Cutkosky et~al.(2020)Cutkosky, Mehta, and
+  Orabona]{cutkosky2020momentum}
+\selectlanguageifdefined{english}
+Cutkosky~Ashok, Mehta~Harsh, Orabona~Francesco. Momentum-based variance
+  reduction in nonconvex {SGD}~// \BibEmph{Advances in Neural Information
+  Processing Systems}. \BibDash
+\newblock 2020.
+
+\bibitem[Zhao et~al.(2025)Zhao, Morwani, Brandfonbrener, Vyas, and
+  Kakade]{zhao2025deconstructing}
+\selectlanguageifdefined{english}
+Deconstructing What Makes a Good Optimizer for Autoregressive Language Models~/
+  Zhao~Rosie, Morwani~Depen, Brandfonbrener~David, Vyas~Nikhil, and
+  Kakade~Sham~M.~// The Thirteenth International Conference on Learning
+  Representations. \BibDash
+\newblock 2025.
+
+\bibitem[Qi et~al.(2026)Qi, Chen, Ye, He, and Xiao]{qi2026delving}
+\selectlanguageifdefined{english}
+Delving into {M}uon and Beyond: Deep Analysis and Extensions~/ Qi~Xianbiao,
+  Chen~Marco, Ye~Jiaquan, He~Yelin, and Xiao~Rong~// \BibEmph{arXiv preprint
+  arXiv:2602.04669}. \BibDash
+\newblock 2026.
+
+\bibitem[Ahn et~al.(2025)Ahn, Xu, Abreu, Fan, Magakyan, Sharma, Zhan, and
+  Langford]{ahn2025dion}
+\selectlanguageifdefined{english}
+Dion: Distributed Orthonormalized Updates~/ Ahn~Kwangjun, Xu~Byron,
+  Abreu~Natalie, Fan~Ying, Magakyan~Gagik, Sharma~Pratyusha, Zhan~Zheng, and
+  Langford~John~// \BibEmph{arXiv preprint arXiv:2504.05295}. \BibDash
+\newblock 2025.
+
+\bibitem[Gruntkowska et~al.(2025{\natexlab{a}})Gruntkowska, Maziane, Qu, and
+  Richtárik]{gruntkowska2025dropmuon}
+\selectlanguageifdefined{english}
+{Drop-Muon}: Update Less, Converge Faster~/ Gruntkowska~Kaja, Maziane~Yassine,
+  Qu~Zheng, and Richtárik~Peter~// \BibEmph{arXiv preprint arXiv:2510.02239}.
+  \BibDash
+\newblock 2025.
+
+\bibitem[Wu et~al.(2026)Wu, Shah, Silwal, and Zhang]{wu2026dynmuon}
+\selectlanguageifdefined{english}
+Dyn{M}uon: A Dynamic Spectral Shaping View of {M}uon~/ Wu~Fangzhou,
+  Shah~Rikhav, Silwal~Sandeep, and Zhang~Qiuyi~// \BibEmph{arXiv preprint
+  arXiv:2605.17109}. \BibDash
+\newblock 2026.
+
+\bibitem[Eldan and Li(2023)Eldan and
+  Li]{eldan2023tinystoriessmalllanguagemodels}
+\selectlanguageifdefined{english}
+Eldan~Ronen, Li~Yuanzhi. {TinyStories}: How Small Can Language Models Be and
+  Still Speak Coherent {English}?~// \BibEmph{arXiv preprint arXiv:2305.07759}.
+  \BibDash
+\newblock 2023.
+
+\bibitem[Gruntkowska et~al.(2025{\natexlab{b}})Gruntkowska, Gaponov, Tovmasyan,
+  and Richtárik]{gruntkowska2025efmuon}
+\selectlanguageifdefined{english}
+Error Feedback for {Muon} and Friends~/ Gruntkowska~Kaja, Gaponov~Alexander,
+  Tovmasyan~Zhirayr, and Richtárik~Peter~// \BibEmph{arXiv preprint
+  arXiv:2510.00643}. \BibDash
+\newblock 2025.
+
+\bibitem[Fan et~al.(2025)Fan, Schmidt, and Thrampoulidis]{fan2025implicit}
+\selectlanguageifdefined{english}
+Fan~Chen, Schmidt~Mark, Thrampoulidis~Christos. Implicit Bias of Spectral
+  Descent and {M}uon on Multiclass Separable Data~// \BibEmph{arXiv preprint
+  arXiv:2502.04664}. \BibDash
+\newblock 2025.
+
+\bibitem[Pethick et~al.(2025{\natexlab{a}})Pethick, Xie, Erdogan,
+  Antonakopoulos, Silveti-Falls, and
+  Cevher]{pethick2025generalizedgradientnormclipping}
+\selectlanguageifdefined{english}
+Generalized Gradient Norm Clipping \& Non-{Euclidean}
+  {$(L_0,L_1)$}-Smoothness~/ Pethick~Thomas, Xie~Wanyun, Erdogan~Mete,
+  Antonakopoulos~Kimon, Silveti-Falls~Tony, and Cevher~Volkan~// \BibEmph{arXiv
+  preprint arXiv:2506.01913}. \BibDash
+\newblock 2025.
+
+\bibitem[Riabinin et~al.(2025)Riabinin, Shulgin, Gruntkowska, and
+  Richt{\'a}rik]{riabinin2025gluon}
+\selectlanguageifdefined{english}
+Gluon: Making {Muon} \& {Scion} Great Again! (Bridging Theory and Practice of
+  {LMO}-based Optimizers for {LLMs})~/ Riabinin~Artem, Shulgin~Egor,
+  Gruntkowska~Kaja, and Richt{\'a}rik~Peter~// \BibEmph{arXiv preprint
+  arXiv:2505.13416}. \BibDash
+\newblock 2025.
+
+\bibitem[Yukhimchuk et~al.(2026)Yukhimchuk, Kolar, Tak{\'a}{\v{c}}, and
+  Choudhury]{yukhimchuk2026spectralclipping}
+\selectlanguageifdefined{english}
+Gradient Clipping Beyond Vector Norms: A Spectral Approach for Matrix-Valued
+  Parameters~/ Yukhimchuk~Alexander, Kolar~Mladen, Tak{\'a}{\v{c}}~Martin, and
+  Choudhury~Sayantan~// \BibEmph{arXiv preprint arXiv:2605.11838}. \BibDash
+\newblock 2026.
+
+\bibitem[Grishina et~al.(2025)Grishina, Smirnov, and
+  Rakhuba]{grishina2025chebyshev}
+\selectlanguageifdefined{english}
+Grishina~Ekaterina, Smirnov~Matvey, Rakhuba~Maxim. Accelerating {Newton-Schulz}
+  Iteration for Orthogonalization via {Chebyshev}-type Polynomials~//
+  \BibEmph{arXiv preprint arXiv:2506.10935}. \BibDash
+\newblock 2025.
+
+\bibitem[Gruntkowska and Richtárik(2025)Gruntkowska and
+  Richtárik]{gruntkowska2025noneuclideanbroximal}
+\selectlanguageifdefined{english}
+Gruntkowska~Kaja, Richtárik~Peter. Non-{Euclidean} Broximal Point Method: A
+  Blueprint for Geometry-Aware Optimization~// \BibEmph{arXiv preprint
+  arXiv:2510.00823}. \BibDash
+\newblock 2025.
+
+\bibitem[Hazan et~al.(2015)Hazan, Levy, and Shalev-Shwartz]{hazan2015beyond}
+\selectlanguageifdefined{english}
+Hazan~Elad, Levy~Kfir, Shalev-Shwartz~Shai. Beyond convexity: Stochastic
+  quasi-convex optimization~// \BibEmph{Advances in neural information
+  processing systems}. \BibDash
+\newblock 2015. \BibDash
+\newblock Vol.~28.
+
+\bibitem[Jang et~al.(2024)Jang, Hwang, and Yang]{jang2024dplogsign}
+\selectlanguageifdefined{english}
+Jang~Jonggyu, Hwang~Seongjin, Yang~Hyun~Jong. Rethinking {DP}-{SGD} in Discrete
+  Domain: Exploring Logistic Distribution in the Realm of sign{SGD}~//
+  Proceedings of the 41st International Conference on Machine Learning~/ ed.\
+  by\ Salakhutdinov~Ruslan, Kolter~Zico, Heller~Katherine et~al. \BibDash
+\newblock PMLR. \BibDash
+\newblock 2024. \BibDash 21--27 Jul. \BibDash
+\newblock Vol.~235 of \BibEmph{Proceedings of Machine Learning Research}.
+  \BibDash
+\newblock P.~21241--21265.
+
+\bibitem[Jiang et~al.(2026)Jiang, Semenov, and
+  Stich]{jiang2026llmspectralclipping}
+\selectlanguageifdefined{english}
+Jiang~Xiaowen, Semenov~Andrei, Stich~Sebastian~U. Enhancing {LLM} training via
+  spectral clipping~// \BibEmph{arXiv preprint arXiv:2603.14315}. \BibDash
+\newblock 2026.
+
+\bibitem[Karpathy(2022)Karpathy]{Karpathy2022}
+\selectlanguageifdefined{english}
+Karpathy~Andrej. {nanoGPT}: The simplest, fastest repository for
+  training/finetuning medium-sized {GPTs}. \BibDash
+\newblock GitHub repository. \BibDash
+\newblock 2022. \BibDash
+\newblock Access mode: \BibUrl{https://github.com/karpathy/nanoGPT}.
+
+\bibitem[Keller(2023)Keller]{cifar2023airbench}
+\selectlanguageifdefined{english}
+Keller~Jordan. {CIFAR-10} airbench. \BibDash
+\newblock 2023. \BibDash
+\newblock Access mode:
+  \BibUrl{https://github.com/KellerJordan/cifar10-airbench}.
+
+\bibitem[Kingma and Ba(2014)Kingma and Ba]{kingma2014adam}
+\selectlanguageifdefined{english}
+Kingma~Diederik~P, Ba~Jimmy. Adam: A method for stochastic optimization~//
+  \BibEmph{arXiv preprint arXiv:1412.6980}. \BibDash
+\newblock 2014.
+
+\bibitem[Kovalev(2025)Kovalev]{kovalev2025understanding}
+\selectlanguageifdefined{english}
+Kovalev~Dmitry. Understanding gradient orthogonalization for deep learning via
+  non-{Euclidean} trust-region optimization~// \BibEmph{arXiv preprint
+  arXiv:2503.12645}. \BibDash
+\newblock 2025.
+
+\bibitem[Kovalev and Borodich(2025)Kovalev and
+  Borodich]{kovalev2025noneuclideansgdstructuredoptimization}
+\selectlanguageifdefined{english}
+Kovalev~Dmitry, Borodich~Ekaterina. {Non-Euclidean} {SGD} for Structured
+  Optimization: Unified Analysis and Improved Rates~// \BibEmph{arXiv preprint
+  arXiv:2511.11466}. \BibDash
+\newblock 2025.
+
+\bibitem[Kravatskiy et~al.(2025)Kravatskiy, Kozyrev, Kozlov, Vinogradov,
+  Merkulov, and Oseledets]{kravatskiy2025kyfannormsbeyond}
+\selectlanguageifdefined{english}
+The {K}y {F}an Norms and Beyond: Dual Norms and Combinations for Matrix
+  Optimization~/ Kravatskiy~Alexey, Kozyrev~Ivan, Kozlov~Nikolai,
+  Vinogradov~Alexander, Merkulov~Daniil, and Oseledets~Ivan~// \BibEmph{arXiv
+  preprint arXiv:2512.09678}. \BibDash
+\newblock 2025.
+
+\bibitem[Petrov et~al.(2025)Petrov, Evseev, Antonov, Veprikov, Bushkov,
+  Moiseev, and Beznosikov]{petrov2025zeromuon}
+\selectlanguageifdefined{english}
+Leveraging Coordinate Momentum in {signSGD} and {Muon}: Memory-Optimized
+  Zero-Order~/ Petrov~Egor, Evseev~Grigoriy, Antonov~Aleksey, Veprikov~Andrey,
+  Bushkov~Nikolay, Moiseev~Stanislav, and Beznosikov~Aleksandr~//
+  \BibEmph{arXiv preprint arXiv:2506.04430}. \BibDash
+\newblock 2025.
+
+\bibitem[Li and Hong(2025)Li and Hong]{li2025noteconvergencemuon}
+\selectlanguageifdefined{english}
+Li~Jiaxiang, Hong~Mingyi. A note on the convergence of {M}uon~// \BibEmph{arXiv
+  preprint arXiv:2502.02900}. \BibDash
+\newblock 2025.
+
+\bibitem[Loshchilov and Hutter(2017)Loshchilov and
+  Hutter]{loshchilov2017decoupled}
+\selectlanguageifdefined{english}
+Loshchilov~Ilya, Hutter~Frank. Decoupled weight decay regularization~//
+  \BibEmph{arXiv preprint arXiv:1711.05101}. \BibDash
+\newblock 2017.
+
+\bibitem[Jordan et~al.(2024{\natexlab{a}})Jordan, Jin, Boza, You, Cesista,
+  Newhouse, and Bernstein]{jordan2024muon}
+\selectlanguageifdefined{english}
+Muon: An optimizer for hidden layers in neural networks. \BibDash
+\newblock 2024. \BibDash
+\newblock Access mode: \BibUrl{https://kellerjordan.github.io/posts/muon/}.
+
+\bibitem[Shumaylov et~al.(2026)Shumaylov, Da~Costa, Zaika, Mucs{\'a}nyi,
+  Massucco, Gelberg, Sch{\"o}nlieb, Gal, and Hennig]{shumaylov2026muon}
+\selectlanguageifdefined{english}
+Muon is Not That Special: Random or Inverted Spectra Work Just as Well~/
+  Shumaylov~Zakhar, Da~Costa~Natha{\"e}l, Zaika~Peter, Mucs{\'a}nyi~B{\'a}lint,
+  Massucco~Alex, Gelberg~Yoav, Sch{\"o}nlieb~Carola-Bibiane, Gal~Yarin, and
+  Hennig~Philipp~// \BibEmph{arXiv preprint arXiv:2605.11181}. \BibDash
+\newblock 2026.
+
+\bibitem[Liu et~al.(2025)Liu, Su, Yao, Jiang, Lai, Du, Qin, Xu, Lu, Yan,
+  et~al.]{liu2025muonscalablellmtraining}
+\selectlanguageifdefined{english}
+Muon is scalable for {LLM} training~/ Liu~Jingyuan, Su~Jianlin, Yao~Xingcheng,
+  Jiang~Zhejun, Lai~Guokun, Du~Yulun, Qin~Yidao, Xu~Weixin, Lu~Enzhe,
+  Yan~Junjie, et~al.~// \BibEmph{arXiv preprint arXiv:2502.16982}. \BibDash
+\newblock 2025.
+
+\bibitem[Li et~al.(2025)Li, Liu, Liang, Chen, and Zhao]{li2025normuon}
+\selectlanguageifdefined{english}
+Nor{M}uon: Making {M}uon more efficient and scalable~/ Li~Zichong, Liu~Liming,
+  Liang~Chen, Chen~Weizhu, and Zhao~Tuo~// \BibEmph{arXiv preprint
+  arXiv:2510.05491}. \BibDash
+\newblock 2025.
+
+\bibitem[Pethick(2025)Pethick]{pethick2025understandingdion}
+\selectlanguageifdefined{english}
+Pethick~Thomas. Understanding {Dion}. \BibDash
+\newblock 2025. \BibDash
+\newblock Access mode:
+  \BibUrl{https://pethick.dk/posts/2025-08-18-understanding-dion/}.
+
+\bibitem[Amsel et~al.(2025)Amsel, Persson, Musco, and Gower]{amsel2025polar}
+\selectlanguageifdefined{english}
+The {Polar Express}: Optimal Matrix Sign Methods and Their Application to the
+  {Muon} Algorithm~/ Amsel~Noah, Persson~David, Musco~Christopher, and
+  Gower~Robert~M~// \BibEmph{arXiv preprint arXiv:2505.16932}. \BibDash
+\newblock 2025.
+
+\bibitem[Shah et~al.(2025)Shah, Polloreno, Stratos, Monk, Chaluvaraju, Hojel,
+  Ma, Thomas, Tanwer, Shah, et~al.]{shah2025practical}
+\selectlanguageifdefined{english}
+Practical efficiency of {Muon} for pretraining~/ Shah~Ishaan,
+  Polloreno~Anthony~M, Stratos~Karl, Monk~Philip, Chaluvaraju~Adarsh,
+  Hojel~Andrew, Ma~Andrew, Thomas~Anil, Tanwer~Ashish, Shah~Darsh~J, et~al.~//
+  \BibEmph{arXiv preprint arXiv:2505.02222}. \BibDash
+\newblock 2025.
+
+\bibitem[Veprikov et~al.(2025)Veprikov, Bolatov, Horv{\'a}th, Beznosikov,
+  Tak{\'a}{\v{c}}, and Hanzely]{veprikov2025preconditioned}
+\selectlanguageifdefined{english}
+Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-{Newton}
+  and Adaptive Methods~/ Veprikov~Andrey, Bolatov~Arman, Horv{\'a}th~Samuel,
+  Beznosikov~Aleksandr, Tak{\'a}{\v{c}}~Martin, and Hanzely~Slavomir~//
+  \BibEmph{arXiv preprint arXiv:2510.10777}. \BibDash
+\newblock 2025.
+
+\bibitem[{Preferred Infrastructure, Inc.} and Developers(2025){Preferred
+  Infrastructure, Inc.} and Developers]{cupy_svds_ref}
+\selectlanguageifdefined{english}
+{Preferred Infrastructure, Inc.}, Developers~{CuPy}. {CuPy:}
+  \texttt{cupyx.scipy.sparse.linalg.svds} — API Reference. \BibDash
+\newblock
+  \url{https://docs.cupy.dev/en/stable/reference/generated/cupyx.scipy.sparse.linalg.svds.html}.
+  \BibDash
+\newblock 2025. \BibDash
+\newblock Accessed: 2025-08-24.
+
+\bibitem[Pethick et~al.(2025{\natexlab{b}})Pethick, Raman, Minorics, Hong,
+  Sabach, and Cevher]{pethick2025sam}
+\selectlanguageifdefined{english}
+{\ensuremath{\nu}SAM}: Memory-Efficient Sharpness-Aware Minimization via
+  Nuclear Norm Constraints~/ Pethick~Thomas, Raman~Parameswaran,
+  Minorics~Lenon, Hong~Mingyi, Sabach~Shoham, and Cevher~Volkan~//
+  \BibEmph{Transactions on Machine Learning Research}. \BibDash
+\newblock 2025.
+
+\bibitem[Vyas et~al.(2025)Vyas, Morwani, Zhao, Kwun, Shapira, Brandfonbrener,
+  Janson, and Kakade]{vyas2025soap}
+\selectlanguageifdefined{english}
+{SOAP}: Improving and Stabilizing {Shampoo} using {Adam}~/ Vyas~Nikhil,
+  Morwani~Depen, Zhao~Rosie, Kwun~Mujin, Shapira~Itai, Brandfonbrener~David,
+  Janson~Lucas, and Kakade~Sham~// \BibEmph{arXiv preprint arXiv:2409.11321}.
+  \BibDash
+\newblock 2025.
+
+\bibitem[Si et~al.(2025)Si, Zhang, and Shen]{si2025adamuon}
+\selectlanguageifdefined{english}
+Si~Chongjie, Zhang~Debing, Shen~Wei. {AdaMuon: Adaptive Muon} Optimizer~//
+  \BibEmph{arXiv preprint arXiv:2507.11005}. \BibDash
+\newblock 2025.
+
+\bibitem[Pethick et~al.(2025{\natexlab{c}})Pethick, Xie, Antonakopoulos, Zhu,
+  Silveti-Falls, and Cevher]{pethick2025training}
+\selectlanguageifdefined{english}
+Training Deep Learning Models with Norm-Constrained {LMO}s~/ Pethick~Thomas,
+  Xie~Wanyun, Antonakopoulos~Kimon, Zhu~Zhenyu, Silveti-Falls~Antonio, and
+  Cevher~Volkan~// Forty-second International Conference on Machine Learning.
+  \BibDash
+\newblock 2025.
+
+\bibitem[Pethick et~al.(2025{\natexlab{d}})Pethick, Antonakopoulos,
+  Silveti-Falls, Vankadara, and Cevher]{pethick2025trainingneuralnetworksscale}
+\selectlanguageifdefined{english}
+Training Neural Networks at Any Scale~/ Pethick~Thomas, Antonakopoulos~Kimon,
+  Silveti-Falls~Antonio, Vankadara~Leena~Chennuru, and Cevher~Volkan~//
+  \BibEmph{arXiv preprint arXiv:2511.11163}. \BibDash
+\newblock 2025.
+
+\bibitem[Wu and Simon(2000)Wu and Simon]{simonz1998thick}
+\selectlanguageifdefined{english}
+Wu~Kesheng, Simon~Horst. {Thick-Restart} {Lanczos} Method for Large Symmetric
+  Eigenvalue Problems~//
+  \href{https://doi.org/10.1137/S0895479898334605}{\BibEmph{SIAM Journal on
+  Matrix Analysis and Applications}}. \BibDash
+\newblock 2000. \BibDash
+\newblock Vol.~22, no.~2. \BibDash
+\newblock P.~602--616. \BibDash
+\newblock https://doi.org/10.1137/S0895479898334605.
+
+\bibitem[Yang et~al.(2026)Yang, He, and Li]{yang2026fanionconvergence}
+\selectlanguageifdefined{english}
+Yang~Yixuan, He~Yuqing, Li~Song. Convergence of Spectral Descent for Non-smooth
+  Optimization~// \BibEmph{arXiv preprint arXiv:2605.26977}. \BibDash
+\newblock 2026.
+
+\bibitem[Yu(2012)Yu]{yu2012arithmetic}
+\selectlanguageifdefined{english}
+Yu~Yao-Liang. Arithmetic duality for norms. \BibDash
+\newblock 2012. \BibDash
+\newblock Access mode:
+  \BibUrl{https://cs.uwaterloo.ca/~y328yu/notes/normduality.pdf}.
+
+\bibitem[Jordan et~al.(2024{\natexlab{b}})Jordan, Bernstein, Rappazzo,
+  @fernbear.bsky.social, Vlado, Jiacheng, Cesista, Koszarsky, and
+  @Grad62304977]{modded_nanogpt_2024}
+\selectlanguageifdefined{english}
+modded-nanogpt: Speedrunning the {NanoGPT} baseline. \BibDash
+\newblock 2024. \BibDash
+\newblock Access mode: \BibUrl{https://github.com/KellerJordan/modded-nanogpt}.
+
+\bibitem[Shi et~al.(2016)Shi, Tu, Xu, and Yin]{shi2016primer}
+\selectlanguageifdefined{english}
+A primer on coordinate descent algorithms~/ Shi~Hao-Jun~Michael,
+  Tu~Shenyinying, Xu~Yangyang, and Yin~Wotao~// \BibEmph{arXiv preprint
+  arXiv:1610.00040}. \BibDash
+\newblock 2016.
+
+\bibitem[Bernstein et~al.(2018)Bernstein, Wang, Azizzadenesheli, and
+  Anandkumar]{bernstein2018signsgd}
+\selectlanguageifdefined{english}
+{signSGD}: Compressed optimisation for non-convex problems~/ Bernstein~Jeremy,
+  Wang~Yu-Xiang, Azizzadenesheli~Kamyar, and Anandkumar~Animashree~//
+  International conference on machine learning~/ PMLR. \BibDash
+\newblock 2018. \BibDash
+\newblock P.~560--569.
+
+\end{thebibliography}
