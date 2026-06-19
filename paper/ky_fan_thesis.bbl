@@ -29,10 +29,10 @@ Bernstein~Jeremy, Newhouse~Laker. Old optimizer, new norm: An anthology~//
 \newblock 2024.
 
 \bibitem[Shulgin et~al.(2025)Shulgin, AlRashed, Orabona, and
-  Richtárik]{shulgin2025inexactmuon}
+  Richt{\'a}rik]{shulgin2025inexactmuon}
 \selectlanguageifdefined{english}
-Beyond the Ideal: Analyzing the Inexact {Muon} Update~/ Shulgin~Egor,
-  AlRashed~Sultan, Orabona~Francesco, and Richtárik~Peter~// \BibEmph{arXiv
+Beyond the ideal: Analyzing the inexact {M}uon update~/ Shulgin~Egor,
+  AlRashed~Sultan, Orabona~Francesco, and Richt{\'a}rik~Peter~// \BibEmph{arXiv
   preprint arXiv:2510.19933}. \BibDash
 \newblock 2025.
 
@@ -69,11 +69,12 @@ Cutkosky~Ashok, Mehta~Harsh, Orabona~Francesco. Momentum-based variance
 \bibitem[Zhao et~al.(2025)Zhao, Morwani, Brandfonbrener, Vyas, and
   Kakade]{zhao2025deconstructing}
 \selectlanguageifdefined{english}
-Deconstructing What Makes a Good Optimizer for Autoregressive Language Models~/
+Deconstructing what makes a good optimizer for autoregressive language models~/
   Zhao~Rosie, Morwani~Depen, Brandfonbrener~David, Vyas~Nikhil, and
-  Kakade~Sham~M.~// The Thirteenth International Conference on Learning
-  Representations. \BibDash
-\newblock 2025.
+  Kakade~Sham~// International Conference on Learning Representations. \BibDash
+\newblock 2025. \BibDash
+\newblock Vol.~2025. \BibDash
+\newblock P.~2830--2850.
 
 \bibitem[Qi et~al.(2026)Qi, Chen, Ye, He, and Xiao]{qi2026delving}
 \selectlanguageifdefined{english}
@@ -128,15 +129,16 @@ Fan~Chen, Schmidt~Mark, Thrampoulidis~Christos. Implicit Bias of Spectral
   arXiv:2502.04664}. \BibDash
 \newblock 2025.
 
-\bibitem[Pethick et~al.(2025{\natexlab{a}})Pethick, Xie, Erdogan,
-  Antonakopoulos, Silveti-Falls, and
-  Cevher]{pethick2025generalizedgradientnormclipping}
+\bibitem[Pethick et~al.(2026)Pethick, Xie, Erdogan, Antonakopoulos,
+  Silveti-Falls, and Cevher]{pethick2025generalizedgradientnormclipping}
 \selectlanguageifdefined{english}
 Generalized Gradient Norm Clipping \& Non-{Euclidean}
   {$(L_0,L_1)$}-Smoothness~/ Pethick~Thomas, Xie~Wanyun, Erdogan~Mete,
-  Antonakopoulos~Kimon, Silveti-Falls~Tony, and Cevher~Volkan~// \BibEmph{arXiv
-  preprint arXiv:2506.01913}. \BibDash
-\newblock 2025.
+  Antonakopoulos~Kimon, Silveti-Falls~Antonio, and Cevher~Volkan~//
+  \BibEmph{Advances in Neural Information Processing Systems}. \BibDash
+\newblock 2026. \BibDash
+\newblock Vol.~38. \BibDash
+\newblock P.~21170--21208.
 
 \bibitem[Riabinin et~al.(2025)Riabinin, Shulgin, Gruntkowska, and
   Richt{\'a}rik]{riabinin2025gluon}
@@ -243,13 +245,14 @@ The {K}y {F}an Norms and Beyond: Dual Norms and Combinations for Matrix
   preprint arXiv:2512.09678}. \BibDash
 \newblock 2025.
 
-\bibitem[Petrov et~al.(2025)Petrov, Evseev, Antonov, Veprikov, Bushkov,
-  Moiseev, and Beznosikov]{petrov2025zeromuon}
+\bibitem[Petrov et~al.(2025)Petrov, Grigoriy, Antonov, Veprikov, Plyusnin,
+  Bushkov, Moiseev, and Beznosikov]{petrov2025zeromuon}
 \selectlanguageifdefined{english}
-Leveraging Coordinate Momentum in {signSGD} and {Muon}: Memory-Optimized
-  Zero-Order~/ Petrov~Egor, Evseev~Grigoriy, Antonov~Aleksey, Veprikov~Andrey,
-  Bushkov~Nikolay, Moiseev~Stanislav, and Beznosikov~Aleksandr~//
-  \BibEmph{arXiv preprint arXiv:2506.04430}. \BibDash
+Leveraging Coordinate Momentum in {SignSGD} and {Muon}: Memory-Optimized
+  Zero-Order {LLM} Fine-Tuning~/ Petrov~Egor, Grigoriy~Evseev, Antonov~Aleksey,
+  Veprikov~Andrey, Plyusnin~Pavel, Bushkov~Nikolay, Moiseev~Stanislav, and
+  Beznosikov~Aleksandr~// Tiny Titans: The next wave of On-Device Learning for
+  Foundational Models (TTODLer-FM). \BibDash
 \newblock 2025.
 
 \bibitem[Li and Hong(2025)Li and Hong]{li2025noteconvergencemuon}
@@ -339,7 +342,7 @@ Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-{Newton}
 \newblock 2025. \BibDash
 \newblock Accessed: 2025-08-24.
 
-\bibitem[Pethick et~al.(2025{\natexlab{b}})Pethick, Raman, Minorics, Hong,
+\bibitem[Pethick et~al.(2025{\natexlab{a}})Pethick, Raman, Minorics, Hong,
   Sabach, and Cevher]{pethick2025sam}
 \selectlanguageifdefined{english}
 {\ensuremath{\nu}SAM}: Memory-Efficient Sharpness-Aware Minimization via
@@ -348,14 +351,16 @@ Preconditioned Norms: A Unified Framework for Steepest Descent, Quasi-{Newton}
   \BibEmph{Transactions on Machine Learning Research}. \BibDash
 \newblock 2025.
 
-\bibitem[Vyas et~al.(2025)Vyas, Morwani, Zhao, Kwun, Shapira, Brandfonbrener,
-  Janson, and Kakade]{vyas2025soap}
+\bibitem[Vyas et~al.(2025)Vyas, Morwani, Zhao, Shapira, Brandfonbrener, Janson,
+  and Kakade]{vyas2025soap}
 \selectlanguageifdefined{english}
-{SOAP}: Improving and Stabilizing {Shampoo} using {Adam}~/ Vyas~Nikhil,
-  Morwani~Depen, Zhao~Rosie, Kwun~Mujin, Shapira~Itai, Brandfonbrener~David,
-  Janson~Lucas, and Kakade~Sham~// \BibEmph{arXiv preprint arXiv:2409.11321}.
-  \BibDash
-\newblock 2025.
+{SOAP}: Improving and stabilizing {S}hampoo using {A}dam for language
+  modeling~/ Vyas~Nikhil, Morwani~Depen, Zhao~Rosie, Shapira~Itai,
+  Brandfonbrener~David, Janson~Lucas, and Kakade~Sham~// International
+  Conference on Learning Representations. \BibDash
+\newblock 2025. \BibDash
+\newblock Vol.~2025. \BibDash
+\newblock P.~93423--93444.
 
 \bibitem[Si et~al.(2025)Si, Zhang, and Shen]{si2025adamuon}
 \selectlanguageifdefined{english}
@@ -363,7 +368,7 @@ Si~Chongjie, Zhang~Debing, Shen~Wei. {AdaMuon: Adaptive Muon} Optimizer~//
   \BibEmph{arXiv preprint arXiv:2507.11005}. \BibDash
 \newblock 2025.
 
-\bibitem[Pethick et~al.(2025{\natexlab{c}})Pethick, Xie, Antonakopoulos, Zhu,
+\bibitem[Pethick et~al.(2025{\natexlab{b}})Pethick, Xie, Antonakopoulos, Zhu,
   Silveti-Falls, and Cevher]{pethick2025training}
 \selectlanguageifdefined{english}
 Training Deep Learning Models with Norm-Constrained {LMO}s~/ Pethick~Thomas,
@@ -372,7 +377,7 @@ Training Deep Learning Models with Norm-Constrained {LMO}s~/ Pethick~Thomas,
   \BibDash
 \newblock 2025.
 
-\bibitem[Pethick et~al.(2025{\natexlab{d}})Pethick, Antonakopoulos,
+\bibitem[Pethick et~al.(2025{\natexlab{c}})Pethick, Antonakopoulos,
   Silveti-Falls, Vankadara, and Cevher]{pethick2025trainingneuralnetworksscale}
 \selectlanguageifdefined{english}
 Training Neural Networks at Any Scale~/ Pethick~Thomas, Antonakopoulos~Kimon,

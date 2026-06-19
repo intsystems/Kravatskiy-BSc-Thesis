@@ -138,16 +138,16 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {russian}{}\relax 
-\contentsline {section}{Приложение}{34}{section*.13}%
-\contentsline {section}{\numberline {9.}LMO for Neural Networks}{34}{section.9}%
-\contentsline {section}{\numberline {10.}Proof of Lemma on the Dual to Convex Combinations}{34}{section.10}%
-\contentsline {section}{\numberline {11.}Norms for F-Muon and F-Neon}{35}{section.11}%
-\contentsline {section}{\numberline {12.}Visualization of Different Matrix Norms}{36}{section.12}%
-\contentsline {subsection}{\numberline {12.1.}Duals to F* and F2 Norms}{36}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2.}A Ky Fan Norm and Its Dual}{36}{subsection.12.2}%
-\contentsline {section}{\numberline {13.}More Details for the Smooth Convex Problem}{37}{section.13}%
-\contentsline {section}{\numberline {14.}Gradient Norm Analysis for CIFAR-10 Experiments}{37}{section.14}%
-\contentsline {section}{\numberline {15.}Technical Details of the Experiments}{39}{section.15}%
-\contentsline {paragraph}{The smooth convex problem and CIFAR-10 airbench}{39}{section.15}%
-\contentsline {paragraph}{NanoGPT and GPT-2 Medium Pretrain}{39}{section.15}%
-\contentsline {paragraph}{NanoGPT Fine-tuning.}{39}{section.15}%
+\contentsline {section}{Приложение}{35}{section*.13}%
+\contentsline {section}{\numberline {9.}LMO for Neural Networks}{35}{section.9}%
+\contentsline {section}{\numberline {10.}Proof of Lemma on the Dual to Convex Combinations}{35}{section.10}%
+\contentsline {section}{\numberline {11.}Norms for F-Muon and F-Neon}{36}{section.11}%
+\contentsline {section}{\numberline {12.}Visualization of Different Matrix Norms}{37}{section.12}%
+\contentsline {subsection}{\numberline {12.1.}Duals to F* and F2 Norms}{37}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2.}A Ky Fan Norm and Its Dual}{37}{subsection.12.2}%
+\contentsline {section}{\numberline {13.}More Details for the Smooth Convex Problem}{38}{section.13}%
+\contentsline {section}{\numberline {14.}Gradient Norm Analysis for CIFAR-10 Experiments}{38}{section.14}%
+\contentsline {section}{\numberline {15.}Technical Details of the Experiments}{40}{section.15}%
+\contentsline {paragraph}{The smooth convex problem and CIFAR-10 airbench}{40}{section.15}%
+\contentsline {paragraph}{NanoGPT and GPT-2 Medium Pretrain}{40}{section.15}%
+\contentsline {paragraph}{NanoGPT Fine-tuning.}{40}{section.15}%
