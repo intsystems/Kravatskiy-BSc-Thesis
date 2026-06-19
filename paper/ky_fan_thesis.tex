@@ -6,6 +6,7 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
+\addto\captionsrussian{\renewcommand{\contentsname}{СОДЕРЖАНИЕ}}
 \usepackage{tempora} % Векторный шрифт, похожий на Times New Roman
 \usepackage{url}
 \usepackage{booktabs}
@@ -29,7 +30,10 @@
 \usepackage[center]{titlesec}
 \usepackage{enumitem}
 \usepackage{caption}
-\usepackage{subcaption} % Заменяет JMLR \subfigure
+\usepackage{subcaption}
+% Настраиваем подписи по ГОСТу (но с английскими словами, раз текст на английском)
+\captionsetup[figure]{name=Figure, labelsep=endash, justification=centering}
+\captionsetup[table]{name=Table, labelsep=endash, justification=raggedright, singlelinecheck=false}
 \usepackage{indentfirst}
 \usepackage{bm}
 
@@ -46,23 +50,30 @@
 }
 
 % Настройка геометрии и абзацев (Шаблон ВКР)
-\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=1cm}
-\setlength\parindent{5ex}
+\geometry{a4paper, top=2cm, bottom=2cm, left=3cm, right=1.5cm}
+\setlength\parindent{1.25cm}
 
 % Точки после номеров разделов
-\renewcommand{\thesection}{\arabic{section}.}
-\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
-\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
-\titlelabel{\thetitle \ }
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\titlelabel{\thetitle\quad}
 
 % Теоремы и окружения
-\newtheorem{theorem}{Теорема}
-\newtheorem{lemma}{Лемма}
-\newtheorem{proposition}{Утверждение}
-\newtheorem{definition}{Определение}
-\newtheorem*{corollary}{Следствие}
-\newtheorem*{note}{Замечание}
-\newtheorem*{example}{Пример}
+% \newtheorem{theorem}{Теорема}
+% \newtheorem{lemma}{Лемма}
+% \newtheorem{proposition}{Утверждение}
+% \newtheorem{definition}{Определение}
+% \newtheorem*{corollary}{Следствие}
+% \newtheorem*{note}{Замечание}
+% \newtheorem*{example}{Пример}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{note}{Remark}
+\newtheorem*{example}{Example}
 \renewcommand{\abstractname}{Аннотация}
 
 % ==========================================
@@ -136,49 +147,62 @@
 \thispagestyle{empty}
 \begin{titlepage}
 \begin{center}
-Федеральное государственное автономное образовательное учреждение\\ высшего образования\\
-<<Московский физико-технический институт\\
-(национальный исследовательский университет)>>\\
-Физтех-школа прикладной математики и информатики\\
+Федеральное государственное автономное образовательное учреждение\\
+высшего образования\\
+«Московский физико-технический институт\\
+(национальный исследовательский университет)»\\[1.5em]
+Физтех-школа прикладной математики и информатики\\[1em]
 Кафедра интеллектуальных систем
 \end{center}
 
-\vspace{0pt plus5fill}
+\vspace{2em}
+\normalsize
+\noindent\textbf{Направление подготовки / специальность:} 03.03.01 Прикладные математика и физика\\
+\textbf{Направленность (профиль) подготовки:} Математическая физика, компьютерные технологии и математическое моделирование в экономике
+
+\vspace{0pt plus3fill}
 
 \begin{center}
-\large{Кравацкий Алексей Юрьевич}
+\textbf{\large АЛГОРИТМЫ ОПТИМИЗАЦИИ НА ОСНОВЕ\\ НЕСПЕКТРАЛЬНЫХ МАТРИЧНЫХ НОРМ\\ ДЛЯ ОБУЧЕНИЯ НЕЙРОННЫХ СЕТЕЙ}\\[1em]
+(бакалаврская работа)
 \end{center}
 
-\vspace{0pt}
+\vspace{0pt plus3fill}
 
-\begin{center}
-\textbf{\large{\MakeUppercase{Алгоритмы оптимизации на основе неспектральных матричных норм для обучения нейронных сетей}}}
-% \textbf{\large{\MakeUppercase{Неспектральные матричные нормы для обучения нейронных сетей}}}
-\end{center}
-
-\vspace{0pt}
-
-\begin{center}
-03.03.01~--- Прикладные математика и физика
-\end{center}
-
-\vspace{0pt}
-
-\begin{center}
-Выпускная квалификационная работа бакалавра
-\end{center}
-
-\vspace{0pt plus2fill}
-
-\begin{center}
-\hfill\parbox{8,4cm}{\textbf{Научный руководитель:}\\
+\hfill\begin{minipage}{0.6\textwidth}
+\textbf{Студент:}\\
+Кравацкий Алексей Юрьевич\\[2mm]
+\rule{\textwidth}{0.5pt}\\
+\centerline{\scriptsize \textit{(подпись студента)}}\\[1.5em]
+\textbf{Научный руководитель:}\\
 Оселедец Иван Валерьевич,\\
-доктор физ.-мат. наук, профессор РАН}\\
+доктор физ.-мат. наук, профессор РАН\\[2mm]
+\rule{\textwidth}{0.5pt}\\
+\centerline{\scriptsize \textit{(подпись научного руководителя)}}
+\end{minipage}
+
 \vspace{0pt plus4fill}
-Москва~--- 2026
+
+\begin{center}
+Москва 2026
 \end{center}
 \end{titlepage}
 \setcounter{page}{2}
+
+% ==========================================
+% АННОТАЦИЯ
+% ==========================================
+\newpage
+\section*{Аннотация}
+% Аннотацию в Оглавление обычно не включают, так как она идет до него, 
+% но если очень нужно, раскомментируйте строку ниже:
+% \addcontentsline{toc}{section}{Аннотация}
+
+В настоящей работе исследуется применение различных матричных норм для оптимизации функций матриц весов, что является ключевой задачей при обучении глубоких нейросетей.
+
+При помощи оракула линейной минимизации (Linear Minimization Oracle, LMO) и двойственных норм к нормам Ки Фана, вводится семейство алгоритмов Fanions, тесно связанных с алгоритмами Muon, $\nu$-SAM и Dion, а также семейства алгоритмов F-Fanions и S-Fanions, обновления которых представляют собой выпуклые комбинации обновлений алгоритмов Fanions и Normalized SGD или SignSGD соответственно.
+
+Благодаря использованию LMO при конструировании семейств, теоремы сходимости для LMO-алгоритмов применимы и для Fanions, F-Fanions, и S-Fanions. Наиболее перспективными алгоритмами в данных семействах являются Muon, F-Muon и S-Muon. По результатам обширного эмпирического исследования всех трёх семейств алгоритмов показывается, что F-Muon и S-Muon стабильно не уступают Muon на задачах глубокого обучения и превосходят его на синтетической гладкой выпуклой задаче.
 
 % ==========================================
 % ОГЛАВЛЕНИЕ
@@ -188,28 +212,14 @@
 \hypersetup{linkcolor=black}
 \tableofcontents
 \endgroup
-
-% ==========================================
-% АННОТАЦИЯ
-% ==========================================
-\newpage
-\begin{center}
-    \Large{\textbf{Аннотация}}
-\end{center}
-
-В настоящей работе исследуется применение различных матричных норм для оптимизации функций матриц весов, что является ключевой задачей при обучении глубоких нейросетей.
-
-При помощи оракула линейной минимизации (Linear Minimization Oracle, LMO) и двойственных норм к нормам Ки Фана, вводятся семейство алгоритмов Fanions, тесно связанных с алгоритмами Muon, $\nu$-SAM и Dion, а также семейства алгоритмов F-Fanions и S-Fanions, обновления которых представляют собой выпуклые комбинации обновлений алгоритмов Fanions и Normalized SGD или SignSGD соответственно.
-Благодаря использованию LMO при конструировании семейств, теоремы сходимости для LMO-алгоритмов применимы и для Fanions, F-Fanions, и S-Fanions.
-Наиболее перспективными алгоритмами в данных семействах являются Muon, F-Muon и S-Muon. По результатам обширного эмпирического исследования всех трёх семейств алгоритмов показывается, что F-Muon и S-Muon стабильно не уступают Muon на задачах глубокого обучения и превосходят его на синтетической гладкой выпуклой задаче.
-
+\clearpage
 
 % ==========================================
 % ОСНОВНОЙ ТЕКСТ
 % ==========================================
-\newpage
-\section{Introduction}
-
+\selectlanguage{english}
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 Minimizing loss functions in unprecedentedly high-dimensional spaces has recently become an integral and crucial part of training large language models. Hence, new scalable, time- and memory-efficient algorithms have been demanded. Besides the well-known Adam \citep{kingma2014adam} and AdamW \citep{loshchilov2017decoupled}, recently proposed Muon \citep{jordan2024muon} has shown promising results on training very large models \citep{liu2025muonscalablellmtraining}. Its key difference from Adam and AdamW is that it has been constructed specifically for optimizing functions of weight matrices, which are common in deep learning.
 
 From a theoretical perspective, a key innovation of Muon was its principled derivation of the update rule, which emerged as the solution to an optimization problem constrained by the RMS-to-RMS norm (a scaled version of the spectral norm) \citep{bernstein2025deriving}.
@@ -730,7 +740,7 @@ The updates of LMO optimizers exhibit striking similarities between vector $l_p$
 \subsection{Theory behind Muon}
 Since Muon \citep{jordan2024muon} is a highly efficient optimizer for functions of weight matrices, substantial research has focused on two objectives: further improving its performance and theoretically explaining its success.
 
-There has been a prolonged gap in the theoretical understanding of Muon, excluding the simplistic derivation of Muon \citep{bernstein2025deriving} that was based on \citep{bernstein2024oldoptimizernewnorm}. This gap, in our view, remains incompletely closed. For example, \citep{kovalev2025understanding} provided convergence guarantees for Muon in various settings, from which, however, Muon's empirical supremacy cannot be recovered. Indeed, although the obtained bounds depend on the norm choice, the convergence asymptotics remain the same as for NSGD and other optimizers: $K = \cO(\epsilon^{-4})$ in the $L$-smooth stochastic case.
+There has been a prolonged gap in the theoretical understanding of Muon, excluding the simplistic derivation of Muon \citep{bernstein2025deriving} that was based on \citep{bernstein2024oldoptimizernewnorm}. This gap, in our view, remains incompletely closed. For example, Kovalev provided convergence guarantees for Muon in various settings \citep{kovalev2025understanding}, from which, however, Muon's empirical supremacy cannot be recovered. Indeed, although the obtained bounds depend on the norm choice, the convergence asymptotics remain the same as for NSGD and other optimizers: $K = \cO(\epsilon^{-4})$ in the $L$-smooth stochastic case.
 
 A similar limitation affects \citep{riabinin2025gluon}, where the $L$-smoothness assumption is replaced with a more practical $(L_0, L_1)$-smoothness. By estimating smoothness, the authors recovered the optimal fine-tuned step sizes reported by \citep{pethick2025training}. However, they have not theoretically demonstrated the optimality of the spectral or RMS-to-RMS norm, which is observed in practice, as our comparison with NSGD and Neon highlights.
 
@@ -747,7 +757,7 @@ Fanios, F-Fanions, and S-Fanions benefit from these improvements and many others
 
 \subsection{The Nuclear Norm in the LMO}
 
-It was discovered during the preparation of \emph{The Ky Fan Norms and Beyond: Dual Norms and Combinations for Matrix Optimization} \citep{kravatskiy2025kyfannormsbeyond} that the nuclear norm has already been explored in the context of the linear minimization oracle. \citep{pethick2025sam} applied it to create $\nu$SAM, a novel sharpness-aware minimization technique. It would be interesting to substitute $\normn{\cdot}$ with $\normkfk{\cdot}^\dagger$ in their approach. Since the SAM neighborhood becomes more diverse, using $k > 1$ might enhance the accuracy boost from using SAM while preserving a small memory footprint and minimal time overhead if Dion-style power iterations are employed.
+It was discovered during the preparation of \emph{The Ky Fan Norms and Beyond: Dual Norms and Combinations for Matrix Optimization} \citep{kravatskiy2025kyfannormsbeyond} that the nuclear norm has already been explored in the context of the linear minimization oracle. Pethick et al. applied it to create $\nu$SAM, a novel sharpness-aware minimization technique \citep{pethick2025sam}. It would be interesting to substitute $\normn{\cdot}$ with $\normkfk{\cdot}^\dagger$ in their approach. Since the SAM neighborhood becomes more diverse, using $k > 1$ might enhance the accuracy boost from using SAM while preserving a small memory footprint and minimal time overhead if Dion-style power iterations are employed.
 
 \subsection{The LMO and Error Feedback}
 
@@ -760,7 +770,7 @@ This section discusses the advances in the area that happened after the publicat
 
 \paragraph{LMO is only an instrument.} Several works \citep{qi2026delving,shumaylov2026muon,wu2026dynmuon} have recently analyzed the updates with the $\mU \mSigma^p \mV^\top$ direction for different $p$, which is up to a scaling factor $\left(\sum_{i=1}^{\min(m,n)}{\sigma_i^{p+1}}\right)^{\frac{p}{p+1}}$ an LMO in the Schatten $\left(1 + \frac{1}{p}\right)$-norm for $p \geq 0$, according to \sectionref{sec:rank_gap}. It was discovered that $p < 0$, which corresponds to a quasi-norm, non-LMO case, led to the feasible \emph{Freon} algorithm \citep{shumaylov2026muon}, while scheduling $p$ from positive to mildly negative over training decreases the required number of steps to reach the target loss \citep{wu2026dynmuon}. The most striking result of \citep{shumaylov2026muon} is that replacing the singular values of the gradient with random noise (via the iteratively applied polynomial map $f(x) = \lambda x(1 - x^2)^2$ for $\lambda = 4.1$) leads to the \emph{Kaon} algorithm that is on par with Muon both in terms of the $O\left(\frac{1}{\sqrt{K}}\right)$ convergence rate by the gradient norm and of the empirical deep learning results. Coupling the findings of the above articles with our results for the non-LMO F-Muon with $\alpha > 1$ from \sectionref{sec:cifar-bench}, we come to the conlcusion that the LMO framework, though useful and with theoretical guarantees, is only one of the instruments to design deep learning optimizers.
 
-\section{Conclusion}
+\section*{Conclusion}
 
 We addressed the central question of whether one should constrain by the spectral or any other operator norm in deriving Muon-like updates, and how alternative norms affect performance and computational cost. Our answer is that the choice of the matrix norm is remarkably flexible: properly tuned variants based on alternative norms can match or even slightly exceed Muon's performance on real-world tasks, while offering additional benefits such as improved learning rate robustness.
 
@@ -773,15 +783,15 @@ However, our results also reveal that not every LMO-based algorithm is effective
 % СПИСОК ЛИТЕРАТУРЫ (Формат ГОСТ)
 % ==========================================
 \newpage
+\selectlanguage{russian}
 \phantomsection
-\addcontentsline{toc}{section}{Список литературы}	
-\urlstyle{rm}                               
+\addcontentsline{toc}{section}{Список использованных источников}\urlstyle{rm}                               
 % \bibliographystyle{utf8gost71u.bst}
 \bibliographystyle{ugost2008ns}
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.}   
 \makeatother
-\bibliography{icomp2024_conference} % Твой файл с литературой
+\bibliography{icomp2024_conference}
 \urlstyle{tt}                               
 
 % ==========================================
@@ -790,9 +800,20 @@ However, our results also reveal that not every LMO-based algorithm is effective
 \newpage
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{section}{Приложение}    
-\section*{Приложение}\label{append}
+\addcontentsline{toc}{section}{Appendices} % Или "Приложения"
 
+\appendix
+% Переопределяем нумерацию на заглавные буквы КИРИЛЛИЦЫ
+\renewcommand{\thesection}{\Asbuk{section}}
+
+% Настраиваем внешний вид заголовка приложения по требованиям МФТИ
+\titleformat{\section}[display]
+  {\normalfont\bfseries\filcenter}
+  {ПРИЛОЖЕНИЕ \thesection}
+  {0pt}
+  {}
+
+\clearpage
 \section{LMO for Neural Networks}\label{sec:lmo_for_nn}
 
 In a typical neural network, the objective function $F$ depends on a set of weight matrices $\{ \mW_1, \mW_2, \ldots \}$. The optimization framework we have described is applied in a layer-wise fashion. At each iteration $t$, a stochastic gradient $g(\mX^t, \xi^t)$ is computed using a mini-batch of data with the $\xi^t$ noise via backpropagation. This yields a separate gradient component, $\mG_i^t$, for each matrix $\mX_i$. The LMO-based update rule is then applied to each matrix $\mX_i$ using its corresponding gradient component $\mG_i^t$.
