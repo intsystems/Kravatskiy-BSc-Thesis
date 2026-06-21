@@ -140,15 +140,15 @@
 \babel@toc {english}{}\relax 
 \babel@toc {russian}{}\relax 
 \contentsline {section}{Appendices}{36}{section*.13}%
-\contentsline {section}{\numberline {\CYRA }LMO for Neural Networks}{36}{appendix.A}%
-\contentsline {section}{\numberline {\CYRB }Proof of Lemma on the Dual to Convex Combinations}{36}{appendix.B}%
-\contentsline {section}{\numberline {\CYRV }Norms for F-Muon and F-Neon}{37}{appendix.C}%
-\contentsline {section}{\numberline {\CYRG }Visualization of Different Matrix Norms}{38}{appendix.D}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRA }}LMO for Neural Networks}{36}{appendix.A}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRB }}Proof of Lemma on the Dual to Convex Combinations}{36}{appendix.B}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRV }}Norms for F-Muon and F-Neon}{37}{appendix.C}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRG }}Visualization of Different Matrix Norms}{38}{appendix.D}%
 \contentsline {subsection}{\numberline {4.1}Duals to F* and F2 Norms}{38}{subsection.D.1}%
 \contentsline {subsection}{\numberline {4.2}A Ky Fan Norm and Its Dual}{38}{subsection.D.2}%
-\contentsline {section}{\numberline {\CYRD }More Details for the Smooth Convex Problem}{39}{appendix.E}%
-\contentsline {section}{\numberline {\CYRE }Gradient Norm Analysis for CIFAR-10 Experiments}{41}{appendix.F}%
-\contentsline {section}{\numberline {\CYRZH }Technical Details of the Experiments}{45}{appendix.G}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRD }}More Details for the Smooth Convex Problem}{39}{appendix.E}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRE }}Gradient Norm Analysis for CIFAR-10 Experiments}{41}{appendix.F}%
+\contentsline {section}{\numberline {\foreignlanguage {russian}{\CYRZH }}Technical Details of the Experiments}{45}{appendix.G}%
 \contentsline {paragraph}{The smooth convex problem and CIFAR-10 airbench}{45}{appendix.G}%
 \contentsline {paragraph}{NanoGPT and GPT-2 Medium Pretrain}{45}{appendix.G}%
 \contentsline {paragraph}{NanoGPT Fine-tuning.}{45}{appendix.G}%

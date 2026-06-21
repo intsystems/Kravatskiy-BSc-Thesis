@@ -200,9 +200,11 @@
 
 В настоящей работе исследуется применение различных матричных норм для оптимизации функций матриц весов, что является ключевой задачей при обучении глубоких нейросетей.
 
-При помощи оракула линейной минимизации (Linear Minimization Oracle, LMO) и двойственных норм к нормам Ки Фана, вводится семейство алгоритмов Fanions, тесно связанных с алгоритмами Muon, $\nu$-SAM и Dion, а также семейства алгоритмов F-Fanions и S-Fanions, обновления которых представляют собой выпуклые комбинации обновлений алгоритмов Fanions и Normalized SGD или SignSGD соответственно.
+Проводится поиск альтернатив спектральной норме для создания алгоритмов оптимизации в рамках подхода \emph{norm-constrained linear minimization oracle (LMO)}. При помощи данного подхода в 2025 году научным сообществом уже были получены высокоэффективные алгоритмы для обучения глубоких нейронных сетей Muon и Scion, которые, однако, опирались именно на спектральную норму.
 
-Благодаря использованию LMO при конструировании семейств, теоремы сходимости для LMO-алгоритмов применимы и для Fanions, F-Fanions, и S-Fanions. Наиболее перспективными алгоритмами в данных семействах являются Muon, F-Muon и S-Muon. По результатам обширного эмпирического исследования всех трёх семейств алгоритмов показывается, что F-Muon и S-Muon стабильно не уступают Muon на задачах глубокого обучения и превосходят его на синтетической гладкой выпуклой задаче.
+На основе норм, двойственных к нормам Ки Фана, вводится семейство алгоритмов \emph{Fanions}, связанных с алгоритмами Muon, $\nu$-SAM и Dion, а также семейства алгоритмов \emph{F-Fanions} и \emph{S-Fanions}, обновления которых представляют собой конические комбинации обновлений алгоритмов Fanions и Normalized SGD или SignSGD соответственно.
+
+Наиболее успешными на практике алгоритмами в данных семействах являются Muon, F-Muon и S-Muon. По результатам обширного эмпирического исследования всех трёх семейств алгоритмов показывается, что F-Muon и S-Muon не уступают Muon на задачах глубокого обучения и превосходят его на синтетической гладкой выпуклой задаче.
 
 % ==========================================
 % ОГЛАВЛЕНИЕ
@@ -228,7 +230,7 @@ Motivated by the success of Muon, many generalizations and variations of it were
 
 \emph{Can the employment of a norm other than an operator norm in Muon-like algorithms yield comparable or superior empirical results?}
 
-We tackle this question by showing that there are many viable non-operator norms. We leverage the family of norms dual to Ky Fan $k$-norms to derive a new family of \emph{Fanions}, algorithms with low-rank updates. This approach theoretically explains the backbone of Dion's update \citep{ahn2025dion} and generalizes the memory-motivated application of the nuclear norm to Sharpness-Aware Minimization \citep{pethick2025sam}. As was done with Muon, we develop an effective procedure for computing Fanions' updates: the Lanczos algorithm is the solution (see \sectionref{sec:matrix-side}).
+We tackle this question by demonstrating that there are many viable non-operator norms. We leverage the family of norms dual to Ky Fan $k$-norms to derive a new family of \emph{Fanions}, algorithms with low-rank updates. This approach theoretically explains the backbone of Dion's update \citep{ahn2025dion} and generalizes the memory-motivated application of the nuclear norm to Sharpness-Aware Minimization \citep{pethick2025sam}. As was done with Muon, we develop an effective procedure for computing Fanions' updates: the Lanczos algorithm is the solution (see \sectionref{sec:matrix-side}).
 
 Working with dual norms and various convex combinations of norms, we construct the families of \emph{F-Fanions} and \emph{S-Fanions}, which are hybrids of Fanions with Normalized SGD and SignSGD, respectively.
 
@@ -420,7 +422,7 @@ We begin with a known property of a conic combination of norms (see, e.g., \cite
 A proof is provided in the appendix (see \sectionref{sec:proof_dual_conv_comb}).
 
 \begin{lemma}\label{lemma:lin_comb_lmo}
-  Let $\norm{\cdot}_{(1)}, \dots, \norm{\cdot}_{(n)}$ be norms on a finite-dimensional Euclidean space, and let $\alpha_1, \dots, \alpha_n$ be non-negative reals. Consider Linear Minimization Oracles $\mathrm{LMO}_{1}, \dots, \mathrm{LMO}_{n}$, corresponding to the unit balls of these norms. Then, $\sum_{i = 1}^n \alpha_i \mathrm{LMO}_{i}$ is the LMO corresponding to the norm $\norm{\cdot}$ dual to the $\sum_{i = 1}^n \alpha_i \norm{\cdot}_{(i)}^\dagger$.
+  Let $\norm{\cdot}_{(1)}, \dots, \norm{\cdot}_{(n)}$ be norms on a finite-dimensional Euclidean space, and let $\alpha_1, \dots, \alpha_n$ be non-negative reals. Consider Linear Minimization Oracles $\mathrm{LMO}_{\norm{\cdot}_{(1)}}, \dots, \mathrm{LMO}_{\norm{\cdot}_{(n)}}$, which correspond to the unit balls of these norms. Then, $\sum_{i = 1}^n \alpha_i \mathrm{LMO}_{\norm{\cdot}_{(i)}}$ is the LMO corresponding to the norm $\norm{\cdot}$ dual to the norm given by $\sum_{i = 1}^n \alpha_i \norm{\cdot}_{(i)}^\dagger$.
 \end{lemma}
 
 \begin{proof}
@@ -438,11 +440,11 @@ A proof is provided in the appendix (see \sectionref{sec:proof_dual_conv_comb}).
 Applying this result to optimization algorithms yields the following corollary.
 
 \begin{corollary}\label{corollary:lin_comb_alg}
-  Let there be a finite family of LMO-based algorithms indexed by $i = 1,\dots,n$, where the $\mX^{t + 1}$ update in the $i$-th algorithm is defined by
+  Let there be a finite family of LMO-based algorithms indexed by $i = 1, \dots, n$, where the $\mX^{t + 1}$ update of the $i$-th algorithm is defined by
   \[
-  \mX^{t + 1} - \mX^{t} = \gamma_t \mathrm{LMO}_{i}(\mM^{t})\,,
+  \mX^{t + 1} - \mX^{t} = \gamma_t \mathrm{LMO}_{\norm{\cdot}_{(i)}}(\mM^{t})\,,
   \]
-  and $\mathrm{LMO}_i$ corresponds to the unit ball of norm $\norm{\cdot}_{(i)}$. For arbitrary non-negative $\alpha_1,\dots,\alpha_n$, the algorithm with the update given by
+  and $\mathrm{LMO}_{\norm{\cdot}_{(i)}}$ corresponds to the unit ball of norm $\norm{\cdot}_{(i)}$. Then, for arbitrary non-negative $\alpha_1, \dots, \alpha_n$, the algorithm with the update given by
   \[
   \mX^{t + 1} - \mX^{t} = \gamma_t \sum_{i = 1}^n \alpha_i \mathrm{LMO}_{\norm{\cdot}_{(i)}}(\mM^t)
   \]
@@ -803,8 +805,11 @@ However, our results also reveal that not every LMO-based algorithm is effective
 \addcontentsline{toc}{section}{Appendices} % Или "Приложения"
 
 \appendix
-% Переопределяем нумерацию на заглавные буквы КИРИЛЛИЦЫ
-\renewcommand{\thesection}{\Asbuk{section}}
+\renewcommand{\proofname}{Proof}
+% Переопределяем нумерацию на кириллицу. 
+% Оборачиваем в \foreignlanguage, чтобы ссылки (\ref) не ломались в английском тексте.
+% Используем \texorpdfstring, чтобы PDF-закладки генерировались без ошибок.
+\renewcommand{\thesection}{\texorpdfstring{\protect\foreignlanguage{russian}{\Asbuk{section}}}{\Asbuk{section}}}
 
 % Настраиваем внешний вид заголовка приложения по требованиям МФТИ
 \titleformat{\section}[display]
@@ -905,14 +910,14 @@ In \figureref{fig:fduals}, we plot these norms. The x-axis and y-axis represent 
   \begin{subfigure}[b]{0.48\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/norms/fstardualball.pdf}
-    \caption{lmo balls for F-Muon for different $\alpha$}
+    \caption{LMO balls for F-Muon for different $\alpha$}
     \label{fig:fstardual}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.48\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/norms/ftwodualball.pdf}
-    \caption{lmo ball for F-Neon for different $\alpha$}
+    \caption{LMO balls for F-Neon for different $\alpha$}
     \label{fig:ftwodual}
   \end{subfigure}
   \caption{Balls in the duals to F* and F2 norms for different $\alpha$.}
