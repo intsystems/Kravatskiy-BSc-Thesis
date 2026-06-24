@@ -185,14 +185,14 @@
  \end{block}
 \end{frame}
 %-------------------------------------------------------------------------------------
-\begin{frame}{LMO-алгоритмы в нормах Шаттена $S_p$ и векторных $l_p$ нормах}
+\begin{frame}{LMO-алгоритмы в нормах Шаттена $S_p$ и векторных $l_p$}
   \begin{table}
   \centering
   \renewcommand{\arraystretch}{1.2} 
   \resizebox{\textwidth}{!}{%
   \begin{tabular}{lccc}
   \toprule
-  Метод & $\norm{\cdot}$ для LMO & Обновление LMO & Ссылка \\
+  Алгоритм & $\norm{\cdot}$ для LMO & Обновление LMO & Статья \\
   \midrule
   Normalized SGD & Евклидова $l_2$ / & $-\gamma_t \tfrac{g}{\norm{g}_2} = -\gamma_t \tfrac{g}{\norm{g}_F}$ & \citep{hazan2015beyond} \\
   Momentum Normalized SGD & Фробениусова $S_2$ & $-\gamma_t \tfrac{g}{\norm{g}_2} = \coloredupdate{-\gamma_t\tfrac{g}{\norm{g}_F}}$ & \citep{cutkosky2020momentum}\\
@@ -221,7 +221,7 @@
         \Large\faQuestionCircle & 
         \begin{tabular}{@{}l@{}}
           Что между $\mU\mV^\top$ и $\vu_1 \vv_1^\top$? \\[0.15cm]
-          Как получить комбинацию алгоритмов в рамках LMO?
+          Как комбинировать LMO-алгоритмы?
         \end{tabular}
       \end{tabular}
     \end{minipage}
@@ -332,6 +332,8 @@
 
 %---------------------------------------------------
 \begin{frame}{Число итераций до $F(\mX)\leq10^{-3}$ для гладкой выпуклой $F$ при постоянном \texttt{learning\_rate}}
+  \centering
+  \footnotesize Задача: $F(\mX) = \frac{1}{2}\normf{\mM^{1/2}\mX\mN^{1/2}}^2 \to \min_{\mX \in \R^{500\times 500}}\,$, где $\lambda(\mM), \lambda(\mN) \sim U[0,1]$, $\mX^0_{ij} \sim \cN(0,1)$.
   \begin{columns}[T,totalwidth=\textwidth]
     \begin{column}{0.48\textwidth}
       \includegraphics[width=\linewidth]{simple_lls/loss_long_run_16_increase.pdf}
@@ -345,8 +347,13 @@
     \end{column}
   \end{columns}
   \vspace{0.3em}
-  \centering
-  \footnotesize Задача: $F(\mX) = \frac{1}{2}\normf{\mM^{1/2}\mX\mN^{1/2}}^2 \to \min_{\mX \in \R^{500\times 500}}\,$, где $\lambda(\mM), \lambda(\mN) \sim U[0,1]$, $\mX^0_{ij} \sim \cN(0,1)$.
+  \begin{center}
+    \begin{minipage}{0.85\textwidth}
+      \normalsize
+      Чем больше $k$ у Fanion-$k$, тем быстрее сходится. \\[0.2cm]
+      F-/S-модификации улучшают Fanion-$k$, в том числе Muon.
+    \end{minipage}
+  \end{center}
 \end{frame}
 
 %---------------------------------------
