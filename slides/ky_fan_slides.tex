@@ -188,28 +188,44 @@
 \begin{frame}{LMO-алгоритмы в нормах Шаттена $S_p$ и векторных $l_p$ нормах}
   \begin{table}
   \centering
-  \label{tbl:mat_vs_vec_lmo}
+  \renewcommand{\arraystretch}{1.2} 
   \resizebox{\textwidth}{!}{%
-  \begin{tabular}{|l|c|c|c|}
-  \hline
+  \begin{tabular}{lccc}
+  \toprule
   Метод & $\norm{\cdot}$ для LMO & Обновление LMO & Ссылка \\
-  \hline\hline
+  \midrule
   Normalized SGD & Евклидова $l_2$ / & $-\gamma_t \tfrac{g}{\norm{g}_2} = -\gamma_t \tfrac{g}{\norm{g}_F}$ & \citep{hazan2015beyond} \\
   Momentum Normalized SGD & Фробениусова $S_2$ & $-\gamma_t \tfrac{g}{\norm{g}_2} = \coloredupdate{-\gamma_t\tfrac{g}{\norm{g}_F}}$ & \citep{cutkosky2020momentum}\\
-  \hline
+  \midrule
   SignSGD & $l_\infty$ (Max-норма) & $-\gamma_t \sign(g)$ & \citep{bernstein2018signsgd} \\
   Signum  & $l_\infty$ (Max-норма) & \coloredupdate{$-\gamma_t \sign(g)$} & \citep{bernstein2018signsgd} \\
   \hdashline
   Muon & Спектральная $S_\infty$ & \coloredupdate{$-\gamma_t \mU\mV^\top$} & \citep{jordan2024muon} \\
-  \hline
+  \midrule
   Gauss-Southwell Descent & Шар в $l_1$ & $-\gamma_t \sum_{i \in \argmax|g_i^t|} \sign(g_i^t)\ve_i$ & \citep{shi2016primer}\\
   \hdashline 
   Neon & Ядерная $S_1$ & \coloredupdate{$-\gamma_t \vu_1 \vv_1^\top$} & \citep{kravatskiy2025fanions} \\
   $\nu$SAM & Ядерная $S_1$ &  & \citep{pethick2025sam} \\
-  \hline
+  \bottomrule
   \end{tabular}%
   }
   \end{table}
+
+  \vspace{0.3cm}
+  
+  \begin{center}
+    \begin{minipage}{0.9\textwidth}
+      \normalsize
+      % Вложенный tabular для идеального выравнивания иконки по центру высоты
+      \begin{tabular}{@{}c@{\hspace{0.3cm}}l@{}}
+        \Large\faQuestionCircle & 
+        \begin{tabular}{@{}l@{}}
+          Что между $\mU\mV^\top$ и $\vu_1 \vv_1^\top$? \\[0.15cm]
+          Как получить комбинацию алгоритмов в рамках LMO?
+        \end{tabular}
+      \end{tabular}
+    \end{minipage}
+  \end{center}
 \end{frame}
 %-------------------------------------------------------------------------------------
 \begin{frame}{Проблема ранга LMO-обновлений}
@@ -347,6 +363,15 @@
       \scriptsize Точность на валидационной выборке
     \end{column}
   \end{columns}
+  \vspace{0.6cm}
+  % Центрируем блок, занимающий 85% ширины слайда
+  \begin{center}
+    \begin{minipage}{0.85\textwidth}
+      \normalsize
+      Чем больше $k$ у Fanion-$k$, тем лучше на практике. \\[0.2cm]
+      F-/S-модификации не портят Muon и улучшают Fanion-$k$.
+    \end{minipage}
+  \end{center}
 \end{frame}
 % %-----------------------------------------
 % \begin{frame}{Нормы стохастических градиентов (layer2.conv2, CIFAR-10 airbench)}
@@ -399,14 +424,22 @@
     \begin{column}{0.48\textwidth}
       \includegraphics[width=\linewidth]{nanogpt/nano/val_loss_vs_step.pdf}
       \centering
-      \scriptsize Модель NanoGPT
+      \scriptsize NanoGPT
     \end{column}
     \begin{column}{0.48\textwidth}
       \includegraphics[width=\linewidth]{nanogpt/medium/val_loss_vs_step.pdf}
       \centering
-      \scriptsize Модель GPT-2 Medium
+      \scriptsize GPT-2 Medium
     \end{column}
   \end{columns}
+  \vspace{0.6cm}
+  
+  \begin{center}
+    \begin{minipage}{0.85\textwidth}
+      \normalsize
+      В отличие от NSGD и SignSGD, F-Muon и S-Muon сопоставимы с Muon.
+    \end{minipage}
+  \end{center}
 \end{frame}
 
 %----------------------------------------
